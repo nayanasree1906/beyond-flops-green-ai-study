@@ -74,3 +74,24 @@ Through this project, I'm learning how to benchmark deep learning models, analyz
 The results come from experiments conducted in a specific hardware and software environment. Inference latency and CPU energy-counter measurements can vary with system conditions, so the findings should be interpreted within the context of the experimental setup.
 
 This project is an exploration of model performance and energy measurement, not a claim that one model is universally the most energy-efficient.
+
+## Visual Results
+
+### 1. FLOPs vs Energy Consumption
+
+This graph compares the computational requirements of the models with their measured energy consumption.
+
+![FLOPs vs Energy](graphs/01_FLOPs_vs_Energy.png)
+
+### 2. Parameters vs Energy Consumption
+
+This graph explores the relationship between model size and measured energy consumption.
+
+![Parameters vs Energy](graphs/02_Parameters_vs_Energy.png)
+
+### 3. Inference Time vs Energy Consumption
+
+This graph compares CPU inference latency with the measured energy consumption across the four models.
+
+![Inference Time vs Energy](graphs/03_Time_vs_Energy.png)
+
