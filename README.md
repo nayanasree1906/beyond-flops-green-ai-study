@@ -15,6 +15,30 @@ The idea behind this study is simple: FLOPs and parameter counts help describe a
 * EfficientNet-B0
 * ShuffleNetV2
 
+## Results
+
+I compared the four models using parameter count, FLOPs, CPU inference
+latency, and energy measurements.
+
+| Model | Parameters | FLOPs | Mean Inference Time (ms) | Mean Energy per Inference (J) |
+|---|---:|---:|---:|---:|
+| EfficientNet-B0 | 5,288,548 | 415,145,024 | 36.36 | 0.897062 |
+| MobileNetV2 | 3,504,872 | 327,486,720 | 23.33 | 0.619070 |
+| ResNet50 | 25,557,032 | 4,133,742,592 | 81.72 | 1.796139 |
+| ShuffleNetV2 | 2,278,604 | 152,708,792 | 23.35 | 0.631503 |
+
+### Observations
+
+- MobileNetV2 recorded the lowest mean inference time and mean energy
+  per inference in these experiments.
+- ShuffleNetV2 had the lowest parameter count and FLOPs.
+- ResNet50 recorded the highest mean inference time and mean energy
+  per inference.
+
+These results reflect measurements from the tested environment.
+Performance and energy consumption may differ across hardware,
+software configurations, and experimental conditions.
+
 ## What I Measured
 
 * **Model parameters:** The number of learnable parameters in each model.
