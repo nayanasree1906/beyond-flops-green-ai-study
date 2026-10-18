@@ -95,3 +95,11 @@ This graph compares CPU inference latency with the measured energy consumption a
 
 ![Inference Time vs Energy](graphs/03_Time_vs_Energy.png)
 
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/nayanasree1906/beyond-flops-green-ai-study.git
+cd beyond-flops-green-ai-study
+
